@@ -29,9 +29,9 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
                 </div>
             </a>
             <nav class="main-nav" id="mainNav">
-                <a href="index.php" class="nav-link <?= $currentPage === 'index' ? 'active' : '' ?>">Beranda</a>
-                <a href="katalog.php" class="nav-link <?= $currentPage === 'katalog' ? 'active' : '' ?>">Katalog</a>
-                <a href="index.php#motivasi" class="nav-link">Motivasi</a>
+               <a href="/api/index.php" class="nav-link ...">Beranda</a>
+<a href="/api/katalog.php" class="nav-link ...">Katalog</a>
+<a href="/api/index.php#motivasi" class="nav-link">Motivasi</a>
             </nav>
             <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
