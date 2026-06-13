@@ -6,8 +6,8 @@
 define('APP_NAME', 'E-Perpus Mas Riy');
 define('APP_TAGLINE', 'Perpustakaan Digital Pribadi');
 define('BASE_PATH', __DIR__);
-define('DATA_FILE', __DIR__ . '/data/books.json');
-define('PDF_DIR', __DIR__ . '/assets/pdf');
+define('DATA_FILE', dirname(__DIR__) . '/data/books.json');
+define('PDF_DIR', dirname(__DIR__) . '/assets/pdf');
 define('CATEGORY_ORDER', [
     'Islam & Spiritual',
     'Psikologi',
