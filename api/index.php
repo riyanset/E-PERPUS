@@ -8,10 +8,10 @@ $categoryCounts = getCategoryCounts();
 $totalBooks = count($books);
 $randomMotivasi = $motivasi[array_rand($motivasi)];
 
-require_once 'includes/header.php';
+// PERBAIKAN: Jalur dirubah mundur satu tingkat ke root folder
+require_once '../includes/header.php';
 ?>
 
-<!-- Hero Section -->
 <section class="hero">
     <div class="container hero-grid">
         <div class="hero-content">
@@ -57,7 +57,6 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<!-- Motivasi Section -->
 <section class="motivasi" id="motivasi">
     <div class="container">
         <div class="section-header">
@@ -76,7 +75,6 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<!-- Manfaat Membaca -->
 <section class="benefits">
     <div class="container">
         <div class="section-header">
@@ -108,7 +106,6 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<!-- Kategori -->
 <?php if (!empty($categoryCounts)): ?>
 <section class="categories-preview">
     <div class="container">
@@ -128,7 +125,6 @@ require_once 'includes/header.php';
 </section>
 <?php endif; ?>
 
-<!-- Buku Pilihan -->
 <?php if (!empty($featuredBooks)): ?>
 <section class="featured">
     <div class="container">
@@ -141,14 +137,13 @@ require_once 'includes/header.php';
         </div>
         <div class="book-grid">
             <?php foreach ($featuredBooks as $book): ?>
-            <?php include 'includes/book-card.php'; ?>
+            <?php include '../includes/book-card.php'; ?>
             <?php endforeach; ?>
         </div>
     </div>
 </section>
 <?php endif; ?>
 
-<!-- CTA -->
 <section class="cta">
     <div class="container">
         <div class="cta-box">
@@ -159,4 +154,4 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once '../includes/footer.php'; ?>

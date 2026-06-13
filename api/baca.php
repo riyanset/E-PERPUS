@@ -14,7 +14,9 @@ $previewUrl = getDrivePreviewUrl($idDrive);
 $hasDrive = !empty($previewUrl);
 
 $pageTitle = $book['title'];
-require_once 'includes/header.php';
+
+// PERBAIKAN: Jalur dirubah mundur satu tingkat ke root folder
+require_once '../includes/header.php';
 ?>
 
 <section class="reader-header">
@@ -71,4 +73,4 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once '../includes/footer.php'; ?>

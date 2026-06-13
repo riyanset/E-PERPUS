@@ -28,7 +28,8 @@ $books = array_values($books);
 $isGrouped = ($search === '' && $category === '');
 $grouped = $isGrouped ? getBooksGroupedByCategory($books) : [];
 
-require_once 'includes/header.php';
+// PERBAIKAN: Jalur dirubah mundur satu tingkat ke root folder
+require_once '../includes/header.php';
 ?>
 
 <section class="page-hero">
@@ -96,7 +97,7 @@ require_once 'includes/header.php';
             </div>
             <div class="book-grid">
                 <?php foreach ($catBooks as $book): ?>
-                <?php include 'includes/book-card.php'; ?>
+                <?php include '../includes/book-card.php'; ?>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -105,11 +106,11 @@ require_once 'includes/header.php';
         <p class="catalog-count"><?= count($books) ?> E-book ditemukan</p>
         <div class="book-grid">
             <?php foreach ($books as $book): ?>
-            <?php include 'includes/book-card.php'; ?>
+            <?php include '../includes/book-card.php'; ?>
             <?php endforeach; ?>
         </div>
         <?php endif; ?>
     </div>
 </section>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require_once '../includes/footer.php'; ?>
