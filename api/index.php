@@ -25,7 +25,7 @@ require_once __DIR__ . '/../includes/header.php';
                 Baca kapan saja, di mana saja — karena setiap buku adalah investasi terbaik untuk masa depan Anda.
             </p>
             <div class="hero-actions">
-                <a href="katalog.php" class="btn btn-primary">
+                <a href="/api/katalog.php" class="btn btn-primary">
                     <span>Mulai Membaca</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -115,7 +115,7 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
         <div class="category-pills category-pills--center reveal">
             <?php foreach ($categoryCounts as $cat => $count): ?>
-            <a href="katalog.php?cat=<?= urlencode($cat) ?>" class="category-pill">
+            <a href="/api/katalog.php?cat=<?= urlencode($cat) ?>" class="category-pill">
                 <?= htmlspecialchars($cat) ?>
                 <span><?= $count ?></span>
             </a>
@@ -133,7 +133,7 @@ require_once __DIR__ . '/../includes/header.php';
                 <span class="section-tag">Koleksi</span>
                 <h2 class="section-title">E-book Pilihan</h2>
             </div>
-            <a href="katalog.php" class="btn btn-outline">Lihat Semua (<?= $totalBooks ?>)</a>
+           <a href="/api/katalog.php" class="btn btn-outline">Lihat Semua (<?= $totalBooks ?>)</a>
         </div>
         <div class="book-grid">
             <?php foreach ($featuredBooks as $book): ?>
@@ -150,7 +150,7 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="cta-box">
             <h2>Siap Memulai Perjalanan Membaca?</h2>
             <p>Jelajahi koleksi E-book PDF kami dan temukan buku favorit Anda hari ini.</p>
-            <a href="katalog.php" class="btn btn-primary btn-lg">Buka Katalog</a>
+            <a href="/api/katalog.php" class="btn btn-primary btn-lg">Buka Katalog</a>
         </div>
     </div>
 </section>

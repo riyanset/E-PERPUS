@@ -1,4 +1,4 @@
-    </main>
+</main>
     <footer class="site-footer">
         <div class="container footer-inner">
             <div class="footer-brand">
@@ -6,10 +6,8 @@
                 <p>Ruang baca digital penuh inspirasi.</p>
             </div>
             <div class="footer-links">
-              <a href="katalog.php" class="btn btn-primary">
-<a href="katalog.php" class="btn btn-outline">
-<a href="katalog.php?cat=..." class="category-pill">
-<a href="katalog.php" class="btn btn-primary btn-lg">
+                <a href="/api/index.php">Beranda</a>
+                <a href="/api/katalog.php">Katalog Buku</a>
             </div>
             <div class="footer-copy">
                 <p>&copy; <?= date('Y') ?> <?= htmlspecialchars(APP_NAME) ?></p>
