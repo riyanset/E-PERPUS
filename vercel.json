@@ -5,9 +5,10 @@
     }
   },
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/$1"
-    }
+    { "src": "/", "dest": "/api/index.php" },
+    { "src": "/katalog", "dest": "/api/katalog.php" },
+    { "src": "/katalog.php", "dest": "/api/katalog.php" },
+    { "src": "/baca", "dest": "/api/baca.php" },
+    { "src": "/baca.php", "dest": "/api/baca.php" }
   ]
 }
