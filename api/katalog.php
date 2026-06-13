@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once __DIR__ . '/config.php';
 
 $pageTitle = 'Katalog';
 $allBooks = getBooks();
@@ -96,7 +96,7 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
             <div class="book-grid">
                 <?php foreach ($catBooks as $book): ?>
-                <?php include '../includes/book-card.php'; ?>
+               <?php include __DIR__ . '/../includes/book-card.php'; ?>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -105,11 +105,11 @@ require_once __DIR__ . '/../includes/header.php';
         <p class="catalog-count"><?= count($books) ?> E-book ditemukan</p>
         <div class="book-grid">
             <?php foreach ($books as $book): ?>
-            <?php include '../includes/book-card.php'; ?>
+           <?php include __DIR__ . '/../includes/book-card.php'; ?>
             <?php endforeach; ?>
         </div>
         <?php endif; ?>
     </div>
 </section>
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>

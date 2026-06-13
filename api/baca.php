@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once __DIR__ . '/config.php';
 
 $id = trim($_GET['id'] ?? '');
 $book = $id ? getBookById($id) : null;
@@ -28,7 +28,7 @@ require_once __DIR__ . '/../includes/header.php';
                 <img
                     src="https://docs.google.com/uc?export=view&id=<?= urlencode($idDrive) ?>"
                     alt="Cover <?= htmlspecialchars($book['title']) ?>"
-                    onerror="this.onerror=null;this.src='../assets/images/default-cover.svg';"
+                    onerror="this.onerror=null;this.src='/assets/images/default-cover.svg';"
                 >
                 <?php else: ?>
                 <img src="assets/images/default-cover.svg" alt="Cover default">
@@ -73,4 +73,4 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 </section>
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>
