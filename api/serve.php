@@ -2,7 +2,7 @@
 /**
  * Melayani file PDF untuk dibaca di web (tanpa unduh)
  */
-require_once 'config.php';
+require_once __DIR__ . '/config.php';
 
 $id = trim($_GET['id'] ?? '');
 $book = $id ? getBookById($id) : null;

@@ -16,7 +16,7 @@ $hasDrive = !empty($previewUrl);
 $pageTitle = $book['title'];
 
 // PERBAIKAN: Jalur dirubah mundur satu tingkat ke root folder
-require_once '../includes/header.php';
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <section class="reader-header">
