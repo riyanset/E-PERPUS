@@ -24,14 +24,14 @@ require_once __DIR__ . '/../includes/header.php';
         <a href="katalog.php" class="back-link">← Kembali ke Katalog</a>
         <div class="reader-top">
             <div class="reader-cover-wrap">
-                <?php if (!empty($idDrive)): ?>
+                <?php if (!empty($book['id_drive'])): ?>
                 <img
-                    src="https://docs.google.com/uc?export=view&id=<?= urlencode($idDrive) ?>"
+                    src="<?= htmlspecialchars($book['cover'], ENT_QUOTES, 'UTF-8') ?>"
                     alt="Cover <?= htmlspecialchars($book['title']) ?>"
-                    onerror="this.onerror=null;this.src='/assets/images/default-cover.svg';"
+                    onerror="this.onerror=null;this.src='../assets/images/default-cover.svg';"
                 >
                 <?php else: ?>
-                <img src="assets/images/default-cover.svg" alt="Cover default">
+                <img src="../assets/images/default-cover.svg" alt="Cover default">
                 <?php endif; ?>
             </div>
             <div class="reader-meta">

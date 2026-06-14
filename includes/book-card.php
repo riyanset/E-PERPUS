@@ -3,13 +3,12 @@
         <div class="book-cover">
             <div class="book-cover-container">
                 <?php if (!empty($book['id_drive'])): ?>
-                <?php $driveId = htmlspecialchars($book['id_drive'], ENT_QUOTES, 'UTF-8'); ?>
                 <img
-                    src="https://docs.google.com/uc?export=view&id=<?= $driveId ?>"
+                    src="<?= htmlspecialchars($book['cover'], ENT_QUOTES, 'UTF-8') ?>"
                     alt="<?= htmlspecialchars($book['title']) ?>"
                     loading="lazy"
                     decoding="async"
-                    onerror="this.onerror=null;this.src='https://drive.google.com/thumbnail?authuser=0&sz=w500&id=<?= $driveId ?>';"
+                    onerror="this.onerror=null;this.src='https://drive.google.com/thumbnail?id=<?= htmlspecialchars($book['id_drive'], ENT_QUOTES, 'UTF-8') ?>&sz=w600';"
                 >
                 <?php else: ?>
                 <div class="default-cover">

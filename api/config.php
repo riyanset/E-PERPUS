@@ -123,9 +123,9 @@ function getCategoryColors(string $category): array
 function getDriveThumbnailUrl(?string $idDrive): string
 {
     if (empty($idDrive)) {
-        return 'assets/images/default-cover.svg';
+        return '../assets/images/default-cover.svg';
     }
-    return 'https://docs.google.com/uc?export=view&id=' . urlencode($idDrive);
+    return 'https://drive.google.com/thumbnail?id=' . urlencode($idDrive) . '&sz=w600';
 }
 
 function getDrivePreviewUrl(?string $idDrive): ?string
