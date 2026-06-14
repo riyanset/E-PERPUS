@@ -6,8 +6,8 @@
                 <p>Ruang baca digital penuh inspirasi.</p>
             </div>
             <div class="footer-links">
-                <a href="/api/index.php">Beranda</a>
-                <a href="/api/katalog.php">Katalog Buku</a>
+                <a href="index.php">Beranda</a>
+                <a href="katalog.php">Katalog Buku</a>
             </div>
             <div class="footer-copy">
                 <p>&copy; <?= date('Y') ?> <?= htmlspecialchars(APP_NAME) ?></p>

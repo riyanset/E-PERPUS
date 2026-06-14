@@ -41,7 +41,7 @@ require_once __DIR__ . '/../includes/header.php';
 
 <section class="catalog">
     <div class="container">
-        <form class="catalog-filter" method="get" action="/api/katalog.php">
+        <form class="catalog-filter" method="get" action="katalog.php">
             <div class="search-box">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
@@ -58,14 +58,14 @@ require_once __DIR__ . '/../includes/header.php';
             </select>
             <button type="submit" class="btn btn-primary">Cari</button>
             <?php if ($search || $category): ?>
-            <a href="/api/katalog.php" class="btn btn-ghost">Reset</a>
+            <a href="katalog.php" class="btn btn-ghost">Reset</a>
             <?php endif; ?>
         </form>
 
         <?php if (!empty($allBooks) && $isGrouped): ?>
         <div class="category-pills">
             <?php foreach (getCategoryCounts() as $cat => $count): ?>
-            <a href="/api/katalog.php?cat=<?= urlencode($cat) ?>" class="category-pill">
+            <a href="katalog.php?cat=<?= urlencode($cat) ?>" class="category-pill">
                 <?= htmlspecialchars($cat) ?>
                 <span><?= $count ?></span>
             </a>

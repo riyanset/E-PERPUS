@@ -1,28 +1,28 @@
-/* E-Perpus Mas Riy — Tema hidup & rapi */
+/* E-Perpus Mas Riy — Tema Elegan, Mewah & Profesional */
 
 :root {
-    --bg: #0f1419;
-    --bg-soft: rgba(22, 28, 40, 0.88);
-    --card: rgba(28, 35, 50, 0.92);
-    --card-hover: rgba(34, 42, 60, 0.95);
-    --border: rgba(255, 255, 255, 0.1);
-    --border-bright: rgba(255, 255, 255, 0.18);
-    --text: #f1f5f9;
-    --text-muted: #94a3b8;
+    --bg: #090c12; /* Deep Obsidian Slate */
+    --bg-soft: rgba(13, 17, 26, 0.95);
+    --card: rgba(18, 23, 34, 0.85); /* Premium semi-transparent glass cards */
+    --card-hover: rgba(25, 32, 47, 0.95);
+    --border: rgba(212, 175, 55, 0.12); /* Subtle Gold border */
+    --border-bright: rgba(212, 175, 55, 0.35); /* Elegant highlighted Gold border */
+    --text: #e2e8f0; /* Crisp ivory text */
+    --text-muted: #8a9bb4; /* Classy slate blue muted text */
     --heading: #ffffff;
-    --gold: #fbbf24;
-    --gold-dark: #d97706;
-    --cyan: #22d3ee;
-    --violet: #a78bfa;
-    --pink: #f472b6;
-    --green: #4ade80;
-    --gradient: linear-gradient(135deg, #fbbf24 0%, #f472b6 50%, #22d3ee 100%);
-    --gradient-soft: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(34, 211, 238, 0.1));
-    --shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-    --shadow-glow: 0 8px 28px rgba(251, 191, 36, 0.15);
-    --radius: 12px;
-    --radius-lg: 16px;
-    --radius-xl: 20px;
+    --gold: #d4af37; /* Metallic Royal Gold */
+    --gold-dark: #aa7c11; /* Antique Burnished Gold */
+    --cyan: #e5c158; /* Champagne Accent */
+    --violet: #ad8b60; /* Luxurious Warm Bronze */
+    --pink: #f5e0a9; /* Soft Cream Gold */
+    --green: #c5a880; /* Soft Metallic Gold/Beige */
+    --gradient: linear-gradient(135deg, #c5a880 0%, #f3e5ab 50%, #aa7c11 100%); /* Premium gold champagne gradient */
+    --gradient-soft: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(170, 124, 17, 0.02) 100%);
+    --shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+    --shadow-glow: 0 8px 30px rgba(212, 175, 55, 0.12);
+    --radius: 8px; /* Sharper modern professional corners */
+    --radius-lg: 12px;
+    --radius-xl: 16px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,9 +53,9 @@ body::after {
     inset: 0;
     z-index: -1;
     background:
-        linear-gradient(160deg, rgba(15, 20, 25, 0.72) 0%, rgba(15, 20, 25, 0.58) 50%, rgba(15, 20, 25, 0.75) 100%),
-        radial-gradient(ellipse at 20% 0%, rgba(251, 191, 36, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 100%, rgba(34, 211, 238, 0.07) 0%, transparent 50%);
+        linear-gradient(160deg, rgba(9, 12, 18, 0.88) 0%, rgba(13, 17, 26, 0.75) 50%, rgba(9, 12, 18, 0.92) 100%),
+        radial-gradient(ellipse at 20% 0%, rgba(212, 175, 55, 0.07) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 100%, rgba(170, 124, 17, 0.05) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -70,9 +70,9 @@ body::after {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(15, 20, 28, 0.9);
+    background: rgba(9, 12, 18, 0.88);
     border-bottom: 1px solid var(--border);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
 }
 
 .site-header::after {
@@ -81,9 +81,9 @@ body::after {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 1px; /* Thinner border for high-end look */
     background: var(--gradient);
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .header-inner {
@@ -102,36 +102,37 @@ body::after {
 }
 
 .brand-icon {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--gradient);
-    border-radius: 11px;
-    color: #1a1400;
+    border-radius: 8px; /* Sharper */
+    color: #120d05; /* Deep luxury warm charcoal */
     box-shadow: var(--shadow-glow);
 }
 
-.brand-icon svg { width: 22px; height: 22px; }
+.brand-icon svg { width: 20px; height: 20px; }
 
 .brand-title {
     display: block;
-    font-size: 1.2rem;
-    font-weight: 800;
+    font-family: 'Marcellus', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.06em;
 }
 
 .brand-sub {
     display: block;
     font-size: 0.65rem;
     font-weight: 600;
-    color: var(--cyan);
-    letter-spacing: 0.12em;
+    color: var(--gold);
+    letter-spacing: 0.15em;
     text-transform: uppercase;
 }
 
@@ -157,9 +158,9 @@ body::after {
 .nav-link:hover { color: var(--heading); }
 
 .nav-link.active {
-    color: #1a1400;
+    color: #120d05;
     background: var(--gradient);
-    box-shadow: 0 2px 12px rgba(251, 191, 36, 0.3);
+    box-shadow: 0 2px 12px rgba(212, 175, 55, 0.25);
 }
 
 .nav-toggle {
@@ -203,11 +204,11 @@ body::after {
 
 .btn-primary {
     background: var(--gradient);
-    color: #1a1400;
-    box-shadow: 0 4px 20px rgba(251, 191, 36, 0.35);
+    color: #120d05;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.22);
 }
 
-.btn-primary:hover { box-shadow: 0 6px 28px rgba(251, 191, 36, 0.45); }
+.btn-primary:hover { box-shadow: 0 6px 28px rgba(212, 175, 55, 0.35); }
 
 .btn-ghost {
     background: rgba(255, 255, 255, 0.06);
@@ -217,18 +218,18 @@ body::after {
 
 .btn-ghost:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-color: var(--cyan);
-    color: var(--cyan);
+    border-color: var(--gold);
+    color: var(--gold);
 }
 
 .btn-outline {
     background: transparent;
     color: var(--gold);
-    border: 2px solid var(--gold);
+    border: 1.5px solid var(--gold);
 }
 
 .btn-outline:hover {
-    background: rgba(251, 191, 36, 0.1);
+    background: rgba(212, 175, 55, 0.08);
     box-shadow: var(--shadow-glow);
 }
 
@@ -253,7 +254,7 @@ body::after {
     gap: 0.4rem;
     padding: 0.35rem 0.9rem;
     background: var(--gradient-soft);
-    border: 1px solid rgba(251, 191, 36, 0.35);
+    border: 1px solid rgba(212, 175, 55, 0.25);
     border-radius: 50px;
     font-size: 0.72rem;
     font-weight: 700;
@@ -267,22 +268,26 @@ body::after {
     content: '';
     width: 6px;
     height: 6px;
-    background: var(--green);
+    background: var(--gold);
     border-radius: 50%;
-    box-shadow: 0 0 8px var(--green);
+    box-shadow: 0 0 8px var(--gold);
 }
 
 .hero-title {
-    font-size: clamp(2rem, 4.5vw, 3rem);
-    font-weight: 800;
-    line-height: 1.15;
+    font-family: 'Marcellus', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 400; /* Marcellus looks most elegant at regular weight */
+    line-height: 1.2;
     color: var(--heading);
-    margin-bottom: 1rem;
-    letter-spacing: -0.03em;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.04em;
 }
 
 .hero-title em {
-    font-style: normal;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: none;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -318,18 +323,20 @@ body::after {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     text-align: center;
-    transition: border-color 0.2s, transform 0.2s;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .stat:hover {
-    border-color: rgba(251, 191, 36, 0.4);
+    border-color: rgba(212, 175, 55, 0.4);
     transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
 }
 
 .stat-num {
     display: block;
+    font-family: 'Marcellus', serif;
     font-size: 1.75rem;
-    font-weight: 800;
+    font-weight: 400;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -364,6 +371,7 @@ body::after {
     position: absolute;
     top: -10px;
     right: 16px;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 6rem;
     font-weight: 800;
     line-height: 1;
@@ -371,7 +379,7 @@ body::after {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .hero-quote-box::after {
@@ -379,25 +387,27 @@ body::after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 4px;
+    width: 3px;
     height: 100%;
     background: var(--gradient);
 }
 
 .hero-quote-box p {
     color: var(--text);
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.15rem;
     line-height: 1.75;
     margin-bottom: 0.85rem;
     position: relative;
 }
 
 .hero-quote-box cite {
-    color: var(--cyan);
+    color: var(--gold);
     font-size: 0.85rem;
     font-style: normal;
     font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
 /* ─── Sections ─── */
@@ -405,7 +415,7 @@ section { padding: 3rem 0; }
 
 .section-header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .section-header--row {
@@ -422,29 +432,30 @@ section { padding: 3rem 0; }
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--cyan);
+    color: var(--gold);
     margin-bottom: 0.5rem;
     padding: 0.25rem 0.65rem;
-    background: rgba(34, 211, 238, 0.1);
+    background: rgba(212, 175, 55, 0.08);
     border-radius: 50px;
-    border: 1px solid rgba(34, 211, 238, 0.25);
+    border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .section-title {
-    font-size: clamp(1.5rem, 3vw, 2.1rem);
-    font-weight: 800;
+    font-family: 'Marcellus', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 400;
     color: var(--heading);
-    letter-spacing: -0.02em;
+    letter-spacing: 0.04em;
 }
 
 .section-header:not(.section-header--row) .section-title::after {
     content: '';
     display: block;
-    width: 50px;
-    height: 4px;
+    width: 40px;
+    height: 2px;
     background: var(--gradient);
     border-radius: 4px;
-    margin: 0.75rem auto 0;
+    margin: 0.6rem auto 0;
 }
 
 .section-desc {
@@ -456,12 +467,12 @@ section { padding: 3rem 0; }
 
 .motivasi,
 .categories-preview {
-    background: rgba(20, 26, 38, 0.5);
+    background: rgba(9, 12, 18, 0.45);
 }
 
 .benefits,
 .featured {
-    background: rgba(15, 20, 28, 0.4);
+    background: rgba(13, 17, 26, 0.35);
 }
 
 /* ─── Cards ─── */
@@ -469,16 +480,16 @@ section { padding: 3rem 0; }
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .motivasi-card,
 .benefit-card {
-    padding: 1.35rem;
+    padding: 1.5rem;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
     position: relative;
     overflow: hidden;
 }
@@ -490,16 +501,16 @@ section { padding: 3rem 0; }
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 2px;
     background: var(--gradient);
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: opacity 0.25s;
 }
 
 .motivasi-card:hover,
 .benefit-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--border-bright);
+    transform: translateY(-4px);
+    border-color: rgba(212, 175, 55, 0.35);
     box-shadow: var(--shadow);
 }
 
@@ -508,9 +519,10 @@ section { padding: 3rem 0; }
 
 .motivasi-card blockquote {
     color: var(--text);
-    font-size: 0.95rem;
-    font-weight: 500;
-    line-height: 1.7;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.75;
     margin-bottom: 0.75rem;
 }
 
@@ -518,11 +530,13 @@ section { padding: 3rem 0; }
     color: var(--gold);
     font-size: 0.82rem;
     font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
 .benefit-num {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-family: 'Marcellus', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -531,16 +545,18 @@ section { padding: 3rem 0; }
 }
 
 .benefit-card h3 {
-    font-size: 1.05rem;
-    font-weight: 700;
+    font-family: 'Marcellus', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
     color: var(--heading);
     margin-bottom: 0.45rem;
+    letter-spacing: 0.02em;
 }
 
 .benefit-card p {
     font-size: 0.88rem;
     color: var(--text-muted);
-    line-height: 1.65;
+    line-height: 1.7;
 }
 
 /* ─── Book cover view ─── */
@@ -593,8 +609,9 @@ section { padding: 3rem 0; }
 }
 
 .book-cover-view__initial {
+    font-family: 'Marcellus', serif;
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.2);
     line-height: 1;
     margin-bottom: 0.3rem;
@@ -602,6 +619,7 @@ section { padding: 3rem 0; }
 }
 
 .book-cover-view__title {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 0.76rem;
     font-weight: 700;
     color: #fff;
@@ -646,7 +664,7 @@ section { padding: 3rem 0; }
 
 .book-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(251, 191, 36, 0.35);
+    border-color: rgba(212, 175, 55, 0.4);
     box-shadow: var(--shadow-glow);
 }
 
@@ -660,7 +678,7 @@ section { padding: 3rem 0; }
     position: relative;
     aspect-ratio: 3/4;
     overflow: hidden;
-    background: var(--card-2);
+    background: var(--card-hover);
 }
 
 .book-cover-container {
@@ -668,8 +686,8 @@ section { padding: 3rem 0; }
     height: 100%;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
-    background: #222;
+    border-radius: 6px;
+    background: #111;
 }
 
 .book-cover-container img {
@@ -680,29 +698,41 @@ section { padding: 3rem 0; }
 }
 
 .default-cover {
-    background: #2e7d32;
-    color: #fff;
+    background: linear-gradient(135deg, #1c2436 0%, #0d121c 100%);
+    color: var(--gold);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+    position: relative;
+    border: 1px solid var(--border);
+}
+
+.default-cover::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    pointer-events: none;
 }
 
 .default-cover span {
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1;
+    font-family: 'Marcellus', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--gold);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .book-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 50%);
+    background: linear-gradient(to top, rgba(9, 12, 18, 0.85), transparent 60%);
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.25rem;
     opacity: 0;
     transition: opacity 0.25s;
     z-index: 2;
@@ -711,9 +741,9 @@ section { padding: 3rem 0; }
 .book-card:hover .book-overlay { opacity: 1; }
 
 .read-btn {
-    padding: 0.45rem 1.1rem;
+    padding: 0.45rem 1.15rem;
     background: var(--gradient);
-    color: #1a1400;
+    color: #120d05;
     font-size: 0.78rem;
     font-weight: 800;
     border-radius: 50px;
@@ -731,10 +761,10 @@ section { padding: 3rem 0; }
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--cyan);
+    color: var(--gold);
     margin-bottom: 0.3rem;
     padding: 0.15rem 0.45rem;
-    background: rgba(34, 211, 238, 0.1);
+    background: rgba(212, 175, 55, 0.08);
     border-radius: 4px;
 }
 
@@ -789,7 +819,7 @@ section { padding: 3rem 0; }
 .category-pill:hover {
     border-color: var(--gold);
     color: var(--gold);
-    background: rgba(251, 191, 36, 0.08);
+    background: rgba(212, 175, 55, 0.08);
     transform: translateY(-1px);
 }
 
@@ -798,7 +828,7 @@ section { padding: 3rem 0; }
     height: 1.35rem;
     padding: 0 0.35rem;
     background: var(--gradient);
-    color: #1a1400;
+    color: #120d05;
     border-radius: 50px;
     font-size: 0.68rem;
     font-weight: 800;
@@ -815,14 +845,16 @@ section { padding: 3rem 0; }
     justify-content: space-between;
     margin-bottom: 1rem;
     padding: 0.65rem 0;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     border-image: var(--gradient) 1;
 }
 
 .catalog-section-title {
-    font-size: 1.15rem;
-    font-weight: 800;
+    font-family: 'Marcellus', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
     color: var(--heading);
+    letter-spacing: 0.02em;
 }
 
 .catalog-section-count {
@@ -841,12 +873,13 @@ section { padding: 3rem 0; }
 
 .cta-box {
     text-align: center;
-    padding: 2.5rem 1.5rem;
+    padding: 3rem 1.5rem;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius-xl);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 .cta-box::before {
@@ -864,10 +897,12 @@ section { padding: 3rem 0; }
 }
 
 .cta-box h2 {
-    font-size: 1.55rem;
-    font-weight: 800;
+    font-family: 'Marcellus', serif;
+    font-size: 1.85rem;
+    font-weight: 400;
     color: var(--heading);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
 }
 
 .cta-box p {
@@ -882,15 +917,16 @@ section { padding: 3rem 0; }
 .page-hero {
     padding: 2.25rem 0 1.5rem;
     text-align: center;
-    background: rgba(20, 26, 38, 0.55);
+    background: rgba(9, 12, 18, 0.65);
     border-bottom: 1px solid var(--border);
 }
 
 .page-title {
-    font-size: clamp(1.65rem, 3vw, 2.3rem);
-    font-weight: 800;
+    font-family: 'Marcellus', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 400;
     color: var(--heading);
-    letter-spacing: -0.02em;
+    letter-spacing: 0.04em;
 }
 
 .page-desc {
@@ -926,7 +962,7 @@ section { padding: 3rem 0; }
     transition: border-color 0.2s;
 }
 
-.search-box:focus-within { border-color: var(--cyan); }
+.search-box:focus-within { border-color: var(--gold); }
 
 .search-box svg {
     width: 16px;
@@ -961,7 +997,7 @@ section { padding: 3rem 0; }
 
 .filter-select:focus {
     outline: none;
-    border-color: var(--cyan);
+    border-color: var(--gold);
 }
 
 .catalog-count {
@@ -974,7 +1010,7 @@ section { padding: 3rem 0; }
 /* ─── Reader ─── */
 .reader-header {
     padding: 1.5rem 0;
-    background: rgba(20, 26, 38, 0.55);
+    background: rgba(9, 12, 18, 0.65);
     border-bottom: 1px solid var(--border);
 }
 
@@ -1003,10 +1039,10 @@ section { padding: 3rem 0; }
     flex-shrink: 0;
     border-radius: var(--radius);
     overflow: hidden;
-    border: 2px solid var(--border-bright);
+    border: 1px solid var(--border-bright);
     aspect-ratio: 3/4;
     box-shadow: var(--shadow);
-    background: var(--card-2);
+    background: var(--card-hover);
 }
 
 .reader-cover-wrap img {
@@ -1018,11 +1054,12 @@ section { padding: 3rem 0; }
 }
 
 .reader-title {
-    font-size: clamp(1.3rem, 3vw, 1.85rem);
-    font-weight: 800;
+    font-family: 'Marcellus', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 400;
     color: var(--heading);
     margin: 0.4rem 0 0.25rem;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
     line-height: 1.3;
 }
 
@@ -1035,20 +1072,20 @@ section { padding: 3rem 0; }
     font-weight: 700;
     color: var(--gold);
     padding: 0.25rem 0.7rem;
-    background: rgba(251, 191, 36, 0.12);
-    border: 1px solid rgba(251, 191, 36, 0.3);
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.25);
     border-radius: 50px;
 }
 
 .reader-note {
     margin-top: 0.75rem;
     font-size: 0.82rem;
-    color: var(--cyan);
+    color: var(--gold);
     font-weight: 500;
     padding: 0.5rem 0.75rem;
-    background: rgba(34, 211, 238, 0.08);
+    background: rgba(212, 175, 55, 0.08);
     border-radius: var(--radius);
-    border-left: 3px solid var(--cyan);
+    border-left: 3px solid var(--gold);
     max-width: 400px;
 }
 
@@ -1063,10 +1100,12 @@ section { padding: 3rem 0; }
 }
 
 .reader-description h3 {
-    font-size: 1.05rem;
-    font-weight: 700;
+    font-family: 'Marcellus', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
     color: var(--heading);
     margin-bottom: 0.45rem;
+    letter-spacing: 0.02em;
 }
 
 .reader-description p {
@@ -1096,13 +1135,14 @@ section { padding: 3rem 0; }
     text-align: center;
     padding: 3rem 1.5rem;
     background: var(--card);
-    border: 2px dashed var(--border-bright);
+    border: 1.5px dashed var(--border-bright);
     border-radius: var(--radius-xl);
 }
 
 .empty-state h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-family: 'Marcellus', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
     color: var(--heading);
     margin-bottom: 0.5rem;
 }
@@ -1111,14 +1151,14 @@ section { padding: 3rem 0; }
 
 .empty-state code {
     padding: 0.15rem 0.4rem;
-    background: rgba(34, 211, 238, 0.1);
+    background: rgba(212, 175, 55, 0.08);
     border-radius: 4px;
     font-size: 0.82rem;
-    color: var(--cyan);
+    color: var(--gold);
 }
 
 .site-footer {
-    background: rgba(12, 16, 22, 0.95);
+    background: rgba(9, 12, 18, 0.98);
     border-top: 1px solid var(--border);
     padding: 2rem 0 1.5rem;
 }
@@ -1126,9 +1166,9 @@ section { padding: 3rem 0; }
 .site-footer::before {
     content: '';
     display: block;
-    height: 2px;
+    height: 1px;
     background: var(--gradient);
-    opacity: 0.5;
+    opacity: 0.4;
     margin-bottom: 0;
 }
 
@@ -1140,14 +1180,16 @@ section { padding: 3rem 0; }
 }
 
 .footer-title {
-    font-size: 1.1rem;
-    font-weight: 800;
+    font-family: 'Marcellus', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     display: block;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.06em;
 }
 
 .footer-brand p,
@@ -1193,7 +1235,7 @@ section { padding: 3rem 0; }
         top: 70px;
         left: 1rem;
         right: 1rem;
-        background: rgba(15, 20, 28, 0.98);
+        background: rgba(9, 12, 18, 0.98);
         flex-direction: column;
         padding: 0.5rem;
         border-radius: var(--radius-lg);
