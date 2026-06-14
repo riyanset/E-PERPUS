@@ -38,9 +38,6 @@ require_once __DIR__ . '/../includes/header.php';
                 <span class="book-category"><?= htmlspecialchars($book['category'] ?? 'Umum') ?></span>
                 <h1 class="reader-title"><?= htmlspecialchars($book['title']) ?></h1>
                 <p class="reader-author">oleh <?= htmlspecialchars($book['author'] ?? '-') ?></p>
-                <?php if ($hasDrive): ?>
-                <p class="reader-note">Baca langsung dari Google Drive di <?= htmlspecialchars(APP_NAME) ?>. Unduh tidak tersedia.</p>
-                <?php endif; ?>
             </div>
         </div>
     </div>
@@ -55,13 +52,15 @@ require_once __DIR__ . '/../includes/header.php';
             <a href="katalog.php" class="btn btn-primary">Kembali</a>
         </div>
         <?php else: ?>
-        <div class="pdf-viewer">
+        <div class="pdf-viewer" style="position: relative;">
             <iframe
                 src="<?= htmlspecialchars($previewUrl) ?>"
                 title="<?= htmlspecialchars($book['title']) ?>"
                 class="pdf-frame"
                 allow="autoplay"
             ></iframe>
+            <!-- Overlay transparan untuk memblokir tombol pop-out, cetak, dan unduh GDrive -->
+            <div class="pdf-viewer-overlay" style="position: absolute; top: 0; right: 0; width: 150px; height: 56px; background: transparent; z-index: 10; cursor: default;"></div>
         </div>
         <?php if (!empty($book['description'])): ?>
         <div class="reader-description">
