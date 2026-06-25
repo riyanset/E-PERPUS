@@ -1,28 +1,34 @@
-/* E-Perpus Mas Riy — Tema Elegan, Mewah & Profesional */
+/* E-Perpus Mas Riy — Tema Berwarna & Mudah Dibaca */
 
 :root {
-    --bg: #090c12; /* Deep Obsidian Slate */
-    --bg-soft: rgba(13, 17, 26, 0.95);
-    --card: rgba(18, 23, 34, 0.85); /* Premium semi-transparent glass cards */
-    --card-hover: rgba(25, 32, 47, 0.95);
-    --border: rgba(212, 175, 55, 0.12); /* Subtle Gold border */
-    --border-bright: rgba(212, 175, 55, 0.35); /* Elegant highlighted Gold border */
-    --text: #e2e8f0; /* Crisp ivory text */
-    --text-muted: #8a9bb4; /* Classy slate blue muted text */
+    --bg: #0f1729; /* Softer dark navy */
+    --bg-soft: rgba(18, 28, 50, 0.95);
+    --card: rgba(25, 38, 68, 0.7);
+    --card-hover: rgba(32, 48, 82, 0.85);
+    --border: rgba(100, 180, 255, 0.12);
+    --border-bright: rgba(56, 189, 248, 0.35);
+    --text: #e8edf5;
+    --text-muted: #8fa3c4;
     --heading: #ffffff;
-    --gold: #d4af37; /* Metallic Royal Gold */
-    --gold-dark: #aa7c11; /* Antique Burnished Gold */
-    --cyan: #e5c158; /* Champagne Accent */
-    --violet: #ad8b60; /* Luxurious Warm Bronze */
-    --pink: #f5e0a9; /* Soft Cream Gold */
-    --green: #c5a880; /* Soft Metallic Gold/Beige */
-    --gradient: linear-gradient(135deg, #c5a880 0%, #f3e5ab 50%, #aa7c11 100%); /* Premium gold champagne gradient */
-    --gradient-soft: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(170, 124, 17, 0.02) 100%);
-    --shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
-    --shadow-glow: 0 8px 30px rgba(212, 175, 55, 0.12);
-    --radius: 8px; /* Sharper modern professional corners */
-    --radius-lg: 12px;
-    --radius-xl: 16px;
+
+    /* Warna-warna cerah & bervariasi */
+    --teal: #2dd4bf;
+    --sky: #38bdf8;
+    --coral: #fb7185;
+    --violet: #a78bfa;
+    --amber: #fbbf24;
+    --lime: #a3e635;
+    --pink: #f472b6;
+    --orange: #fb923c;
+
+    /* Gradient utama — lebih cerah & berwarna */
+    --gradient: linear-gradient(135deg, #38bdf8 0%, #a78bfa 40%, #fb7185 75%, #fbbf24 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(56, 189, 248, 0.12) 0%, rgba(251, 113, 133, 0.06) 100%);
+    --shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 8px 30px rgba(56, 189, 248, 0.18);
+    --radius: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -30,10 +36,10 @@
 html { scroll-behavior: smooth; }
 
 body {
-    font-family: 'Plus Jakarta Sans', Segoe UI, sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.65;
+    line-height: 1.7;
     min-height: 100vh;
     position: relative;
     -webkit-font-smoothing: antialiased;
@@ -53,9 +59,10 @@ body::after {
     inset: 0;
     z-index: -1;
     background:
-        linear-gradient(160deg, rgba(9, 12, 18, 0.88) 0%, rgba(13, 17, 26, 0.75) 50%, rgba(9, 12, 18, 0.92) 100%),
-        radial-gradient(ellipse at 20% 0%, rgba(212, 175, 55, 0.07) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 100%, rgba(170, 124, 17, 0.05) 0%, transparent 50%);
+        linear-gradient(160deg, rgba(15, 23, 41, 0.9) 0%, rgba(18, 28, 50, 0.75) 50%, rgba(15, 23, 41, 0.92) 100%),
+        radial-gradient(ellipse at 15% 0%, rgba(56, 189, 248, 0.15) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 100%, rgba(251, 113, 133, 0.12) 0%, transparent 55%),
+        radial-gradient(ellipse at 50% 50%, rgba(167, 139, 250, 0.06) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -70,7 +77,7 @@ body::after {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(9, 12, 18, 0.88);
+    background: rgba(15, 23, 41, 0.88);
     border-bottom: 1px solid var(--border);
     backdrop-filter: blur(16px);
 }
@@ -81,9 +88,9 @@ body::after {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 1px; /* Thinner border for high-end look */
+    height: 2px;
     background: var(--gradient);
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .header-inner {
@@ -102,37 +109,37 @@ body::after {
 }
 
 .brand-icon {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--gradient);
-    border-radius: 8px; /* Sharper */
-    color: #120d05; /* Deep luxury warm charcoal */
-    box-shadow: var(--shadow-glow);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(56, 189, 248, 0.25);
 }
 
 .brand-icon svg { width: 20px; height: 20px; }
 
 .brand-title {
     display: block;
-    font-family: 'Marcellus', serif;
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    letter-spacing: 0.06em;
+    letter-spacing: -0.01em;
 }
 
 .brand-sub {
     display: block;
-    font-size: 0.65rem;
+    font-size: 0.68rem;
     font-weight: 600;
-    color: var(--gold);
-    letter-spacing: 0.15em;
+    color: var(--teal);
+    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
@@ -158,9 +165,9 @@ body::after {
 .nav-link:hover { color: var(--heading); }
 
 .nav-link.active {
-    color: #120d05;
+    color: #fff;
     background: var(--gradient);
-    box-shadow: 0 2px 12px rgba(212, 175, 55, 0.25);
+    box-shadow: 0 4px 16px rgba(56, 189, 248, 0.25);
 }
 
 .nav-toggle {
@@ -204,11 +211,11 @@ body::after {
 
 .btn-primary {
     background: var(--gradient);
-    color: #120d05;
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.22);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.22);
 }
 
-.btn-primary:hover { box-shadow: 0 6px 28px rgba(212, 175, 55, 0.35); }
+.btn-primary:hover { box-shadow: 0 6px 28px rgba(56, 189, 248, 0.35); }
 
 .btn-ghost {
     background: rgba(255, 255, 255, 0.06);
@@ -218,18 +225,18 @@ body::after {
 
 .btn-ghost:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-color: var(--gold);
-    color: var(--gold);
+    border-color: var(--teal);
+    color: var(--teal);
 }
 
 .btn-outline {
     background: transparent;
-    color: var(--gold);
-    border: 1.5px solid var(--gold);
+    color: var(--sky);
+    border: 1.5px solid var(--sky);
 }
 
 .btn-outline:hover {
-    background: rgba(212, 175, 55, 0.08);
+    background: rgba(56, 189, 248, 0.08);
     box-shadow: var(--shadow-glow);
 }
 
@@ -254,11 +261,11 @@ body::after {
     gap: 0.4rem;
     padding: 0.35rem 0.9rem;
     background: var(--gradient-soft);
-    border: 1px solid rgba(212, 175, 55, 0.25);
+    border: 1px solid rgba(56, 189, 248, 0.25);
     border-radius: 50px;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--sky);
     margin-bottom: 1rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -268,26 +275,24 @@ body::after {
     content: '';
     width: 6px;
     height: 6px;
-    background: var(--gold);
+    background: var(--teal);
     border-radius: 50%;
-    box-shadow: 0 0 8px var(--gold);
+    box-shadow: 0 0 8px var(--teal);
 }
 
 .hero-title {
-    font-family: 'Marcellus', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(2.2rem, 5vw, 3.4rem);
-    font-weight: 400; /* Marcellus looks most elegant at regular weight */
-    line-height: 1.2;
+    font-weight: 800;
+    line-height: 1.15;
     color: var(--heading);
     margin-bottom: 1.25rem;
-    letter-spacing: 0.04em;
+    letter-spacing: -0.02em;
 }
 
 .hero-title em {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-style: italic;
-    font-weight: 500;
-    text-transform: none;
+    font-style: normal;
+    font-weight: 800;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -296,7 +301,7 @@ body::after {
 
 .hero-desc {
     color: var(--text-muted);
-    font-size: 1.02rem;
+    font-size: 1rem;
     max-width: 480px;
     margin-bottom: 1.5rem;
     line-height: 1.75;
@@ -327,26 +332,28 @@ body::after {
 }
 
 .stat:hover {
-    border-color: rgba(212, 175, 55, 0.4);
+    border-color: var(--border-bright);
     transform: translateY(-2px);
     box-shadow: var(--shadow-glow);
 }
 
+.stat:nth-child(1) .stat-num { color: var(--sky); }
+.stat:nth-child(3) .stat-num { color: var(--teal); }
+.stat:nth-child(5) .stat-num { color: var(--coral); }
+
 .stat-num {
     display: block;
-    font-family: 'Marcellus', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.75rem;
-    font-weight: 400;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-weight: 800;
+    color: var(--amber);
     line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 .stat-label {
     display: block;
-    font-size: 0.72rem;
+    font-size: 0.73rem;
     font-weight: 600;
     color: var(--text-muted);
     margin-top: 0.2rem;
@@ -371,15 +378,12 @@ body::after {
     position: absolute;
     top: -10px;
     right: 16px;
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 6rem;
     font-weight: 800;
     line-height: 1;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    opacity: 0.15;
+    color: var(--violet);
+    opacity: 0.12;
 }
 
 .hero-quote-box::after {
@@ -387,27 +391,27 @@ body::after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 3px;
+    width: 4px;
     height: 100%;
     background: var(--gradient);
 }
 
 .hero-quote-box p {
     color: var(--text);
-    font-family: 'Playfair Display', Georgia, serif;
-    font-style: italic;
-    font-size: 1.15rem;
-    line-height: 1.75;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-size: 1.05rem;
+    line-height: 1.8;
     margin-bottom: 0.85rem;
     position: relative;
 }
 
 .hero-quote-box cite {
-    color: var(--gold);
+    color: var(--teal);
     font-size: 0.85rem;
     font-style: normal;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
 }
 
 /* ─── Sections ─── */
@@ -428,31 +432,31 @@ section { padding: 3rem 0; }
 
 .section-tag {
     display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--teal);
     margin-bottom: 0.5rem;
-    padding: 0.25rem 0.65rem;
-    background: rgba(212, 175, 55, 0.08);
+    padding: 0.25rem 0.7rem;
+    background: rgba(45, 212, 191, 0.1);
     border-radius: 50px;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(45, 212, 191, 0.2);
 }
 
 .section-title {
-    font-family: 'Marcellus', serif;
-    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: 700;
     color: var(--heading);
-    letter-spacing: 0.04em;
+    letter-spacing: -0.01em;
 }
 
 .section-header:not(.section-header--row) .section-title::after {
     content: '';
     display: block;
-    width: 40px;
-    height: 2px;
+    width: 50px;
+    height: 3px;
     background: var(--gradient);
     border-radius: 4px;
     margin: 0.6rem auto 0;
@@ -467,12 +471,12 @@ section { padding: 3rem 0; }
 
 .motivasi,
 .categories-preview {
-    background: rgba(9, 12, 18, 0.45);
+    background: rgba(15, 23, 41, 0.45);
 }
 
 .benefits,
 .featured {
-    background: rgba(13, 17, 26, 0.35);
+    background: rgba(18, 28, 50, 0.35);
 }
 
 /* ─── Cards ─── */
@@ -501,7 +505,7 @@ section { padding: 3rem 0; }
     top: 0;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 3px;
     background: var(--gradient);
     opacity: 0;
     transition: opacity 0.25s;
@@ -510,47 +514,64 @@ section { padding: 3rem 0; }
 .motivasi-card:hover,
 .benefit-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(212, 175, 55, 0.35);
+    border-color: rgba(56, 189, 248, 0.3);
     box-shadow: var(--shadow);
 }
 
 .motivasi-card:hover::before,
 .benefit-card:hover::before { opacity: 1; }
 
+/* Warna berbeda untuk tiap motivasi card */
+.motivasi-card:nth-child(1) { border-left: 3px solid var(--sky); }
+.motivasi-card:nth-child(2) { border-left: 3px solid var(--coral); }
+.motivasi-card:nth-child(3) { border-left: 3px solid var(--violet); }
+.motivasi-card:nth-child(4) { border-left: 3px solid var(--teal); }
+.motivasi-card:nth-child(5) { border-left: 3px solid var(--amber); }
+.motivasi-card:nth-child(6) { border-left: 3px solid var(--pink); }
+
 .motivasi-card blockquote {
     color: var(--text);
-    font-family: 'Playfair Display', Georgia, serif;
-    font-style: italic;
-    font-size: 1.05rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-size: 0.95rem;
     line-height: 1.75;
     margin-bottom: 0.75rem;
 }
 
 .motivasi-card cite {
-    color: var(--gold);
     font-size: 0.82rem;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    font-style: normal;
+    letter-spacing: 0.03em;
 }
 
+.motivasi-card:nth-child(1) cite { color: var(--sky); }
+.motivasi-card:nth-child(2) cite { color: var(--coral); }
+.motivasi-card:nth-child(3) cite { color: var(--violet); }
+.motivasi-card:nth-child(4) cite { color: var(--teal); }
+.motivasi-card:nth-child(5) cite { color: var(--amber); }
+.motivasi-card:nth-child(6) cite { color: var(--pink); }
+
+/* Warna berbeda untuk tiap benefit card */
+.benefit-card:nth-child(1) .benefit-num { color: var(--sky); }
+.benefit-card:nth-child(2) .benefit-num { color: var(--coral); }
+.benefit-card:nth-child(3) .benefit-num { color: var(--violet); }
+.benefit-card:nth-child(4) .benefit-num { color: var(--amber); }
+
 .benefit-num {
-    font-family: 'Marcellus', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.8rem;
-    font-weight: 400;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-weight: 800;
+    color: var(--sky);
     margin-bottom: 0.35rem;
 }
 
 .benefit-card h3 {
-    font-family: 'Marcellus', serif;
-    font-size: 1.15rem;
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
     color: var(--heading);
     margin-bottom: 0.45rem;
-    letter-spacing: 0.02em;
 }
 
 .benefit-card p {
@@ -599,7 +620,7 @@ section { padding: 3rem 0; }
     left: 12px;
     right: 8px;
     font-size: 0.55rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.9);
@@ -609,9 +630,9 @@ section { padding: 3rem 0; }
 }
 
 .book-cover-view__initial {
-    font-family: 'Marcellus', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 800;
     color: rgba(255, 255, 255, 0.2);
     line-height: 1;
     margin-bottom: 0.3rem;
@@ -619,8 +640,8 @@ section { padding: 3rem 0; }
 }
 
 .book-cover-view__title {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 0.76rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.78rem;
     font-weight: 700;
     color: #fff;
     line-height: 1.4;
@@ -664,8 +685,8 @@ section { padding: 3rem 0; }
 
 .book-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(212, 175, 55, 0.4);
-    box-shadow: var(--shadow-glow);
+    border-color: rgba(56, 189, 248, 0.35);
+    box-shadow: 0 12px 32px rgba(56, 189, 248, 0.15);
 }
 
 .book-card-link {
@@ -698,8 +719,8 @@ section { padding: 3rem 0; }
 }
 
 .default-cover {
-    background: linear-gradient(135deg, #1c2436 0%, #0d121c 100%);
-    color: var(--gold);
+    background: linear-gradient(135deg, #1e2d4a 0%, #0f1729 100%);
+    color: var(--sky);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -713,22 +734,22 @@ section { padding: 3rem 0; }
     content: '';
     position: absolute;
     inset: 4px;
-    border: 1px solid rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.15);
     pointer-events: none;
 }
 
 .default-cover span {
-    font-family: 'Marcellus', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 3.5rem;
-    font-weight: 400;
-    color: var(--gold);
+    font-weight: 800;
+    color: var(--sky);
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .book-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(9, 12, 18, 0.85), transparent 60%);
+    background: linear-gradient(to top, rgba(15, 23, 41, 0.85), transparent 60%);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -743,9 +764,9 @@ section { padding: 3rem 0; }
 .read-btn {
     padding: 0.45rem 1.15rem;
     background: var(--gradient);
-    color: #120d05;
+    color: #fff;
     font-size: 0.78rem;
-    font-weight: 800;
+    font-weight: 700;
     border-radius: 50px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
@@ -757,14 +778,14 @@ section { padding: 3rem 0; }
 
 .book-category {
     display: inline-block;
-    font-size: 0.62rem;
-    font-weight: 800;
+    font-size: 0.65rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--gold);
+    color: var(--teal);
     margin-bottom: 0.3rem;
-    padding: 0.15rem 0.45rem;
-    background: rgba(212, 175, 55, 0.08);
+    padding: 0.15rem 0.5rem;
+    background: rgba(45, 212, 191, 0.1);
     border-radius: 4px;
 }
 
@@ -817,18 +838,28 @@ section { padding: 3rem 0; }
 }
 
 .category-pill:hover {
-    border-color: var(--gold);
-    color: var(--gold);
-    background: rgba(212, 175, 55, 0.08);
+    border-color: var(--sky);
+    color: var(--sky);
+    background: rgba(56, 189, 248, 0.08);
     transform: translateY(-1px);
 }
+
+/* Warna berbeda untuk tiap category pill */
+.category-pill:nth-child(1):hover { border-color: var(--sky); color: var(--sky); background: rgba(56, 189, 248, 0.08); }
+.category-pill:nth-child(2):hover { border-color: var(--coral); color: var(--coral); background: rgba(251, 113, 133, 0.08); }
+.category-pill:nth-child(3):hover { border-color: var(--violet); color: var(--violet); background: rgba(167, 139, 250, 0.08); }
+.category-pill:nth-child(4):hover { border-color: var(--teal); color: var(--teal); background: rgba(45, 212, 191, 0.08); }
+.category-pill:nth-child(5):hover { border-color: var(--amber); color: var(--amber); background: rgba(251, 191, 36, 0.08); }
+.category-pill:nth-child(6):hover { border-color: var(--pink); color: var(--pink); background: rgba(244, 114, 182, 0.08); }
+.category-pill:nth-child(7):hover { border-color: var(--orange); color: var(--orange); background: rgba(251, 146, 60, 0.08); }
+.category-pill:nth-child(8):hover { border-color: var(--lime); color: var(--lime); background: rgba(163, 230, 53, 0.08); }
 
 .category-pill span {
     min-width: 1.35rem;
     height: 1.35rem;
     padding: 0 0.35rem;
     background: var(--gradient);
-    color: #120d05;
+    color: #fff;
     border-radius: 50px;
     font-size: 0.68rem;
     font-weight: 800;
@@ -850,11 +881,10 @@ section { padding: 3rem 0; }
 }
 
 .catalog-section-title {
-    font-family: 'Marcellus', serif;
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--heading);
-    letter-spacing: 0.02em;
 }
 
 .catalog-section-count {
@@ -897,12 +927,11 @@ section { padding: 3rem 0; }
 }
 
 .cta-box h2 {
-    font-family: 'Marcellus', serif;
-    font-size: 1.85rem;
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
     color: var(--heading);
     margin-bottom: 0.75rem;
-    letter-spacing: 0.04em;
 }
 
 .cta-box p {
@@ -917,16 +946,15 @@ section { padding: 3rem 0; }
 .page-hero {
     padding: 2.25rem 0 1.5rem;
     text-align: center;
-    background: rgba(9, 12, 18, 0.65);
+    background: rgba(15, 23, 41, 0.65);
     border-bottom: 1px solid var(--border);
 }
 
 .page-title {
-    font-family: 'Marcellus', serif;
-    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    font-weight: 700;
     color: var(--heading);
-    letter-spacing: 0.04em;
 }
 
 .page-desc {
@@ -962,7 +990,7 @@ section { padding: 3rem 0; }
     transition: border-color 0.2s;
 }
 
-.search-box:focus-within { border-color: var(--gold); }
+.search-box:focus-within { border-color: var(--sky); }
 
 .search-box svg {
     width: 16px;
@@ -997,7 +1025,7 @@ section { padding: 3rem 0; }
 
 .filter-select:focus {
     outline: none;
-    border-color: var(--gold);
+    border-color: var(--sky);
 }
 
 .catalog-count {
@@ -1010,7 +1038,7 @@ section { padding: 3rem 0; }
 /* ─── Reader ─── */
 .reader-header {
     padding: 1.5rem 0;
-    background: rgba(9, 12, 18, 0.65);
+    background: rgba(15, 23, 41, 0.65);
     border-bottom: 1px solid var(--border);
 }
 
@@ -1026,7 +1054,7 @@ section { padding: 3rem 0; }
     transition: color 0.2s;
 }
 
-.back-link:hover { color: var(--gold); }
+.back-link:hover { color: var(--sky); }
 
 .reader-top {
     display: flex;
@@ -1054,12 +1082,11 @@ section { padding: 3rem 0; }
 }
 
 .reader-title {
-    font-family: 'Marcellus', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(1.4rem, 3vw, 2rem);
-    font-weight: 400;
+    font-weight: 700;
     color: var(--heading);
     margin: 0.4rem 0 0.25rem;
-    letter-spacing: 0.02em;
     line-height: 1.3;
 }
 
@@ -1070,22 +1097,22 @@ section { padding: 3rem 0; }
     margin-top: 0.5rem;
     font-size: 0.78rem;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--sky);
     padding: 0.25rem 0.7rem;
-    background: rgba(212, 175, 55, 0.1);
-    border: 1px solid rgba(212, 175, 55, 0.25);
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.25);
     border-radius: 50px;
 }
 
 .reader-note {
     margin-top: 0.75rem;
     font-size: 0.82rem;
-    color: var(--gold);
+    color: var(--amber);
     font-weight: 500;
     padding: 0.5rem 0.75rem;
-    background: rgba(212, 175, 55, 0.08);
+    background: rgba(251, 191, 36, 0.08);
     border-radius: var(--radius);
-    border-left: 3px solid var(--gold);
+    border-left: 3px solid var(--amber);
     max-width: 400px;
 }
 
@@ -1100,12 +1127,11 @@ section { padding: 3rem 0; }
 }
 
 .reader-description h3 {
-    font-family: 'Marcellus', serif;
-    font-size: 1.15rem;
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
     color: var(--heading);
     margin-bottom: 0.45rem;
-    letter-spacing: 0.02em;
 }
 
 .reader-description p {
@@ -1140,9 +1166,9 @@ section { padding: 3rem 0; }
 }
 
 .empty-state h3 {
-    font-family: 'Marcellus', serif;
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--heading);
     margin-bottom: 0.5rem;
 }
@@ -1151,14 +1177,14 @@ section { padding: 3rem 0; }
 
 .empty-state code {
     padding: 0.15rem 0.4rem;
-    background: rgba(212, 175, 55, 0.08);
+    background: rgba(56, 189, 248, 0.08);
     border-radius: 4px;
     font-size: 0.82rem;
-    color: var(--gold);
+    color: var(--sky);
 }
 
 .site-footer {
-    background: rgba(9, 12, 18, 0.98);
+    background: rgba(12, 18, 35, 0.98);
     border-top: 1px solid var(--border);
     padding: 2rem 0 1.5rem;
 }
@@ -1166,9 +1192,9 @@ section { padding: 3rem 0; }
 .site-footer::before {
     content: '';
     display: block;
-    height: 1px;
+    height: 2px;
     background: var(--gradient);
-    opacity: 0.4;
+    opacity: 0.5;
     margin-bottom: 0;
 }
 
@@ -1180,16 +1206,15 @@ section { padding: 3rem 0; }
 }
 
 .footer-title {
-    font-family: 'Marcellus', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.15rem;
-    font-weight: 400;
+    font-weight: 700;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     display: block;
     margin-bottom: 0.5rem;
-    letter-spacing: 0.06em;
 }
 
 .footer-brand p,
@@ -1206,7 +1231,7 @@ section { padding: 3rem 0; }
     transition: color 0.2s;
 }
 
-.footer-links a:hover { color: var(--gold); }
+.footer-links a:hover { color: var(--sky); }
 
 .footer-copy {
     grid-column: 1 / -1;
@@ -1235,7 +1260,7 @@ section { padding: 3rem 0; }
         top: 70px;
         left: 1rem;
         right: 1rem;
-        background: rgba(9, 12, 18, 0.98);
+        background: rgba(15, 23, 41, 0.98);
         flex-direction: column;
         padding: 0.5rem;
         border-radius: var(--radius-lg);
