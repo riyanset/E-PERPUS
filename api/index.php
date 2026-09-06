@@ -40,8 +40,8 @@ require_once __DIR__ . '/../includes/header.php';
             <!-- small box aqua -->
             <div class="small-box bg-aqua">
                 <div class="inner">
-                    <h3>Peringkat 0</h3>
-                    <p>Total Pembaca : 3</p>
+                    <h3>3</h3>
+                    <p>Total Pembaca</p>
                 </div>
                 <div class="icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -54,8 +54,8 @@ require_once __DIR__ . '/../includes/header.php';
             <!-- small box purple -->
             <div class="small-box bg-purple">
                 <div class="inner">
-                    <h3>Peringkat 0</h3>
-                    <p>Total Durasi : 14 Jam</p>
+                    <h3>14 Jam</h3>
+                    <p>Total Durasi Baca</p>
                 </div>
                 <div class="icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -68,8 +68,8 @@ require_once __DIR__ . '/../includes/header.php';
             <!-- small box red -->
             <div class="small-box bg-red">
                 <div class="inner">
-                    <h3>Peringkat 0</h3>
-                    <p>Total Sirkulasi : <?= $totalBooks ?></p>
+                    <h3><?= $totalBooks ?></h3>
+                    <p>Total Sirkulasi Buku</p>
                 </div>
                 <div class="icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
@@ -82,8 +82,8 @@ require_once __DIR__ . '/../includes/header.php';
             <!-- small box orange -->
             <div class="small-box bg-orange">
                 <div class="inner">
-                    <h3><?= $totalBooks ?> Buku</h3>
-                    <p>SIRKULASI BUKU di BACA : 7</p>
+                    <h3>7</h3>
+                    <p>Sirkulasi Buku Dibaca</p>
                 </div>
                 <div class="icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>

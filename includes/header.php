@@ -107,4 +107,21 @@ $userName = 'Mas Riy';
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+
+        <!-- Mobile Quick Nav (Tampil Jelas di HP / Smartphone) -->
+        <div class="mobile-quick-nav">
+            <a href="index.php" class="mobile-nav-item <?= $currentPage === 'index' ? 'active' : '' ?>">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span>Beranda</span>
+            </a>
+            <a href="katalog.php" class="mobile-nav-item <?= $currentPage === 'katalog' ? 'active' : '' ?>">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <span>Katalog Buku</span>
+            </a>
+            <a href="index.php#motivasi" class="mobile-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>Motivasi</span>
+            </a>
+        </div>
+
 
