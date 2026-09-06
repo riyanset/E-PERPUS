@@ -196,8 +196,8 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="active-member-item">
                         <img src="../assets/images/user-logo.png" alt="User" class="member-thumb">
                         <div class="member-details">
-                            <strong>deepublish.ds@gmail.com</strong>
-                            <small class="text-success">● Aktif / Administrator</small>
+                            <strong>Mas Riy</strong>
+                            <small class="text-success">● Aktif / Pengelola E-Perpus</small>
                         </div>
                     </div>
                 </div>
