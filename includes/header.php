@@ -29,10 +29,10 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             </span>
         </a>
 
-        <!-- Header Navbar — hanya judul, tanpa hamburger & tanpa profil user -->
+        <!-- Header Navbar — hanya judul app, tanpa hamburger & tanpa profil user -->
         <nav class="navbar navbar-static-top" role="navigation">
             <div class="navbar-custom-title">
-                <span>E-Perpus Mas Riy @ Perpustakaan Digital Pribadi</span>
+                <span><?= htmlspecialchars(APP_NAME) ?></span>
             </div>
         </nav>
     </header>

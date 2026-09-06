@@ -3,7 +3,7 @@
  * Konfigurasi E-Perpus Mas Riy
  */
 
-define('APP_NAME', 'E-Perpus Mas Riy');
+define('APP_NAME', 'E-Perpus Digital');
 define('APP_TAGLINE', 'Perpustakaan Digital Pribadi');
 define('BASE_PATH', __DIR__);
 define('DATA_FILE', dirname(__DIR__) . '/data/books.json');
@@ -117,20 +117,20 @@ define('CATEGORY_COLORS', [
 ]);
 
 $motivasi = [
-    ['quote' => 'Membaca adalah pintu menuju dunia yang tak terbatas. Setiap halaman adalah petualangan baru.', 'author' => 'Anonim'],
-    ['quote' => 'Buku adalah teman terbaik yang tidak pernah mengkhianati. Ia selalu ada saat kita membutuhkan.', 'author' => 'Anonim'],
+    ['quote' => 'Membaca adalah pintu menuju dunia yang tak terbatas. Setiap halaman adalah petualangan baru.', 'author' => 'Riyan Setiawan'],
+    ['quote' => 'Buku adalah teman terbaik yang tidak pernah mengkhianati. Ia selalu ada saat kita membutuhkan.', 'author' => 'Riyan Setiawan'],
     ['quote' => 'Investasi terbaik adalah investasi pada pengetahuan. Dan cara termudah adalah dengan membaca.', 'author' => 'Warren Buffett'],
     ['quote' => 'Seorang pembaca hidup seribu kali sebelum ia mati. Orang yang tidak pernah membaca hanya hidup sekali.', 'author' => 'George R.R. Martin'],
     ['quote' => 'Tidak ada teman yang setia seperti buku. Tidak ada musuh yang lebih tidak berbahaya dari kemalasan.', 'author' => 'Ernest Hemingway'],
-    ['quote' => 'Orang yang membaca buku akan selalu bisa mengendalikan orang yang hanya menonton layar.', 'author' => 'Anonim'],
-    ['quote' => 'Ilmu tanpa amal seperti pohon tanpa buah. Jadikan setiap bacaan sebagai langkah menuju perubahan nyata.', 'author' => 'Anonim'],
+    ['quote' => 'Orang yang membaca buku akan selalu bisa mengendalikan orang yang hanya menonton layar.', 'author' => 'Riyan Setiawan'],
+    ['quote' => 'Ilmu tanpa amal seperti pohon tanpa buah. Jadikan setiap bacaan sebagai langkah menuju perubahan nyata.', 'author' => 'Riyan Setiawan'],
     ['quote' => 'Setiap buku yang kamu baca mengisi hidupmu dengan satu lagi kehidupan yang belum pernah kamu jalani.', 'author' => 'John Irving'],
-    ['quote' => 'Kepandaian sejati bukan hanya soal apa yang kamu ketahui, tapi soal apa yang kamu lakukan dengan pengetahuanmu.', 'author' => 'Anonim'],
-    ['quote' => 'Orang sukses membaca buku. Orang sangat sukses membaca buku dan menerapkannya setiap hari.', 'author' => 'Anonim'],
-    ['quote' => 'Bacalah buku yang membuatmu lebih bijak, bukan hanya yang membuatmu merasa nyaman.', 'author' => 'Anonim'],
-    ['quote' => 'Jangan pernah berhenti belajar. Karena hidup tidak pernah berhenti mengajarkan pelajaran baru.', 'author' => 'Anonim'],
+    ['quote' => 'Kepandaian sejati bukan hanya soal apa yang kamu ketahui, tapi soal apa yang kamu lakukan dengan pengetahuanmu.', 'author' => 'Riyan Setiawan'],
+    ['quote' => 'Orang sukses membaca buku. Orang sangat sukses membaca buku dan menerapkannya setiap hari.', 'author' => 'Riyan Setiawan'],
+    ['quote' => 'Bacalah buku yang membuatmu lebih bijak, bukan hanya yang membuatmu merasa nyaman.', 'author' => 'Riyan Setiawan'],
+    ['quote' => 'Jangan pernah berhenti belajar. Karena hidup tidak pernah berhenti mengajarkan pelajaran baru.', 'author' => 'Riyan Setiawan'],
     ['quote' => 'Mimpi tanpa ilmu adalah angan-angan. Ilmu tanpa mimpi adalah peta tanpa tujuan.', 'author' => 'Riyan Setiawan'],
-    ['quote' => 'Yang membedakan orang biasa dengan orang luar biasa adalah kebiasaan membaca setiap hari.', 'author' => 'Anonim'],
+    ['quote' => 'Yang membedakan orang biasa dengan orang luar biasa adalah kebiasaan membaca setiap hari.', 'author' => 'Riyan Setiawan'],
 ];
 
 function makeBookId(string $filename): string
