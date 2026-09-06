@@ -1,6 +1,5 @@
 <?php
 $currentPage = basename($_SERVER['PHP_SELF'], '.php');
-$userName = 'Mas Riy';
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -30,31 +29,15 @@ $userName = 'Mas Riy';
             </span>
         </a>
 
-        <!-- Header Navbar -->
+        <!-- Header Navbar — hanya judul, tanpa hamburger & tanpa profil user -->
         <nav class="navbar navbar-static-top" role="navigation">
-            <!-- Sidebar toggle button-->
-            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-            </button>
             <div class="navbar-custom-title">
                 <span>E-Perpus Mas Riy @ Perpustakaan Digital Pribadi</span>
-            </div>
-
-            <!-- Navbar Right Menu -->
-            <div class="navbar-custom-menu">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown user user-menu">
-                        <a href="index.php" class="dropdown-toggle">
-                            <img src="../assets/images/user-logo.png" class="user-image" alt="User Image">
-                            <span class="hidden-xs"><?= htmlspecialchars($userName) ?></span>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Left side column. contains the logo and sidebar -->
+    <!-- Left side column. contains the sidebar menu (desktop only) -->
     <aside class="main-sidebar">
         <section class="sidebar">
 
@@ -85,7 +68,7 @@ $userName = 'Mas Riy';
                         <span>Katalog Buku</span>
                     </a>
                 </li>
-                <li class="<?= $currentPage === 'index' ? 'active' : '' ?>">
+                <li>
                     <a href="index.php#motivasi">
                         <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <span>Motivasi</span>
@@ -98,7 +81,7 @@ $userName = 'Mas Riy';
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
 
-        <!-- Mobile Quick Nav (Tampil Jelas di HP / Smartphone) -->
+        <!-- Mobile Quick Nav — tampil di HP, menggantikan hamburger & sidebar -->
         <div class="mobile-quick-nav">
             <a href="index.php" class="mobile-nav-item <?= $currentPage === 'index' ? 'active' : '' ?>">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -108,10 +91,8 @@ $userName = 'Mas Riy';
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                 <span>Katalog Buku</span>
             </a>
-            <a href="index.php#motivasi" class="mobile-nav-item">
+            <a href="index.php#motivasi" class="mobile-nav-item <?= $currentPage === 'index' ? '' : '' ?>">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 <span>Motivasi</span>
             </a>
         </div>
-
-
