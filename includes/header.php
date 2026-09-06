@@ -57,16 +57,6 @@ $userName = 'Mas Riy';
     <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
         <section class="sidebar">
-            <!-- Sidebar user panel -->
-            <div class="user-panel">
-                <div class="pull-left image">
-                    <img src="../assets/images/user-logo.png" class="img-circle" alt="User Image">
-                </div>
-                <div class="pull-left info">
-                    <p><?= htmlspecialchars($userName) ?></p>
-                    <a href="#"><span class="status-indicator online"></span> Online</a>
-                </div>
-            </div>
 
             <!-- search form -->
             <form action="katalog.php" method="get" class="sidebar-form">
@@ -95,7 +85,7 @@ $userName = 'Mas Riy';
                         <span>Katalog Buku</span>
                     </a>
                 </li>
-                <li>
+                <li class="<?= $currentPage === 'index' ? 'active' : '' ?>">
                     <a href="index.php#motivasi">
                         <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <span>Motivasi</span>

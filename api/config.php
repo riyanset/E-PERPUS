@@ -121,6 +121,16 @@ $motivasi = [
     ['quote' => 'Buku adalah teman terbaik yang tidak pernah mengkhianati. Ia selalu ada saat kita membutuhkan.', 'author' => 'Anonim'],
     ['quote' => 'Investasi terbaik adalah investasi pada pengetahuan. Dan cara termudah adalah dengan membaca.', 'author' => 'Warren Buffett'],
     ['quote' => 'Seorang pembaca hidup seribu kali sebelum ia mati. Orang yang tidak pernah membaca hanya hidup sekali.', 'author' => 'George R.R. Martin'],
+    ['quote' => 'Tidak ada teman yang setia seperti buku. Tidak ada musuh yang lebih tidak berbahaya dari kemalasan.', 'author' => 'Ernest Hemingway'],
+    ['quote' => 'Orang yang membaca buku akan selalu bisa mengendalikan orang yang hanya menonton layar.', 'author' => 'Anonim'],
+    ['quote' => 'Ilmu tanpa amal seperti pohon tanpa buah. Jadikan setiap bacaan sebagai langkah menuju perubahan nyata.', 'author' => 'Anonim'],
+    ['quote' => 'Setiap buku yang kamu baca mengisi hidupmu dengan satu lagi kehidupan yang belum pernah kamu jalani.', 'author' => 'John Irving'],
+    ['quote' => 'Kepandaian sejati bukan hanya soal apa yang kamu ketahui, tapi soal apa yang kamu lakukan dengan pengetahuanmu.', 'author' => 'Anonim'],
+    ['quote' => 'Orang sukses membaca buku. Orang sangat sukses membaca buku dan menerapkannya setiap hari.', 'author' => 'Anonim'],
+    ['quote' => 'Bacalah buku yang membuatmu lebih bijak, bukan hanya yang membuatmu merasa nyaman.', 'author' => 'Anonim'],
+    ['quote' => 'Jangan pernah berhenti belajar. Karena hidup tidak pernah berhenti mengajarkan pelajaran baru.', 'author' => 'Anonim'],
+    ['quote' => 'Mimpi tanpa ilmu adalah angan-angan. Ilmu tanpa mimpi adalah peta tanpa tujuan.', 'author' => 'Riyan Setiawan'],
+    ['quote' => 'Yang membedakan orang biasa dengan orang luar biasa adalah kebiasaan membaca setiap hari.', 'author' => 'Anonim'],
 ];
 
 function makeBookId(string $filename): string

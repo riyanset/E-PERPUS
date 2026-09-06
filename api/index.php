@@ -226,8 +226,32 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
     </div>
 
+    <!-- ═══ Motivasi Section ═══ -->
+    <div class="row" id="motivasi">
+        <div class="col-xs-12">
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;display:inline-block;vertical-align:middle;margin-right:6px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        Motivasi Membaca
+                    </h3>
+                </div>
+                <div class="box-body">
+                    <div class="motivasi-grid">
+                        <?php foreach ($motivasi as $i => $m): ?>
+                        <div class="motivasi-card" style="animation-delay: <?= $i * 0.07 ?>s">
+                            <div class="motivasi-quote-icon">❝</div>
+                            <p class="motivasi-text"><?= htmlspecialchars($m['quote']) ?></p>
+                            <span class="motivasi-author">— <?= htmlspecialchars($m['author']) ?></span>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 <!-- /.content -->
 
-<?php require_once __DIR__ . '/../includes/footer.php'; ?>
- 
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>

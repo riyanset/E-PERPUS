@@ -1144,12 +1144,11 @@ body.sidebar-collapse .main-footer {
     float: right;
 }
 
-/* Mobile Quick Nav Bar */
+/* Mobile Quick Nav Bar — hidden by default, shown only on small screens */
 .mobile-quick-nav {
     display: none;
 }
 
-/* Responsive Rules */
 @media (max-width: 767px) {
     .mobile-quick-nav {
         display: flex;
@@ -1183,10 +1182,19 @@ body.sidebar-collapse .main-footer {
         height: 16px;
         flex-shrink: 0;
     }
+    .mobile-nav-item span {
+        display: inline-block !important;
+        font-size: 12px;
+    }
     .mobile-nav-item.active {
         background: #3c8dbc;
         color: #ffffff !important;
         box-shadow: 0 2px 6px rgba(60, 141, 188, 0.4);
+    }
+
+    /* Hide hamburger sidebar toggle on mobile - mobile nav handles navigation */
+    .sidebar-toggle {
+        display: none !important;
     }
 
     .main-sidebar {
@@ -1215,3 +1223,82 @@ body.sidebar-collapse .main-footer {
     }
 }
 
+/* ─── 11. Motivasi Cards ─── */
+#motivasi {
+    scroll-margin-top: 60px;
+}
+
+.motivasi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.motivasi-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    animation: fadeInUp 0.5s ease both;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.motivasi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(60, 141, 188, 0.2);
+}
+
+.motivasi-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3c8dbc, #00c0ef, #f39c12);
+    border-radius: 12px 12px 0 0;
+}
+
+.motivasi-quote-icon {
+    font-size: 36px;
+    color: #3c8dbc;
+    line-height: 1;
+    margin-bottom: 8px;
+    opacity: 0.7;
+    font-family: Georgia, serif;
+}
+
+.motivasi-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #e2e8f0;
+    margin: 0 0 12px 0;
+    font-style: italic;
+}
+
+.motivasi-author {
+    font-size: 12px;
+    font-weight: 700;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .motivasi-grid {
+        grid-template-columns: 1fr;
+    }
+}
