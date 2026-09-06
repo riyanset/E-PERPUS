@@ -34,61 +34,18 @@ require_once __DIR__ . '/../includes/header.php';
         <span>Terakhir di perbaharui : <?= date('d M Y') ?> Jam : <?= date('H:i:s') ?></span>
     </div>
 
-    <!-- Small boxes (Stat cards row) -->
+    <!-- Stat card — Total Buku -->
     <div class="row small-box-row">
         <div class="col-lg-3 col-xs-6">
-            <!-- small box aqua -->
             <div class="small-box bg-aqua">
                 <div class="inner">
-                    <h3>3</h3>
-                    <p>Total Pembaca</p>
-                </div>
-                <div class="icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </div>
-                <a href="katalog.php" class="small-box-footer">More info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box purple -->
-            <div class="small-box bg-purple">
-                <div class="inner">
-                    <h3>14 Jam</h3>
-                    <p>Total Durasi Baca</p>
-                </div>
-                <div class="icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                </div>
-                <a href="katalog.php" class="small-box-footer">More info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box red -->
-            <div class="small-box bg-red">
-                <div class="inner">
                     <h3><?= $totalBooks ?></h3>
-                    <p>Total Sirkulasi Buku</p>
+                    <p>Total Koleksi Buku</p>
                 </div>
                 <div class="icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                 </div>
-                <a href="katalog.php" class="small-box-footer">More info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-xs-6">
-            <!-- small box orange -->
-            <div class="small-box bg-orange">
-                <div class="inner">
-                    <h3>7</h3>
-                    <p>Sirkulasi Buku Dibaca</p>
-                </div>
-                <div class="icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                </div>
-                <a href="katalog.php" class="small-box-footer">More info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
+                <a href="katalog.php" class="small-box-footer">Lihat Katalog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a>
             </div>
         </div>
     </div>
