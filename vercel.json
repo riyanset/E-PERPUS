@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+    { "src": "/", "dest": "/api/index.php" },
+    { "src": "/katalog", "dest": "/api/katalog.php" },
+    { "src": "/katalog.php", "dest": "/api/katalog.php" },
+    { "src": "/baca", "dest": "/api/baca.php" },
+    { "src": "/baca.php", "dest": "/api/baca.php" }
+  ]
+}
