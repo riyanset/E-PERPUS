@@ -5,10 +5,18 @@
     }
   },
   "routes": [
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/", "dest": "/api/index.php" },
+    { "src": "/index.php", "dest": "/api/index.php" },
     { "src": "/katalog", "dest": "/api/katalog.php" },
     { "src": "/katalog.php", "dest": "/api/katalog.php" },
     { "src": "/baca", "dest": "/api/baca.php" },
-    { "src": "/baca.php", "dest": "/api/baca.php" }
+    { "src": "/baca.php", "dest": "/api/baca.php" },
+    { "src": "/login", "dest": "/api/login.php" },
+    { "src": "/login.php", "dest": "/api/login.php" },
+    { "src": "/register", "dest": "/api/register.php" },
+    { "src": "/register.php", "dest": "/api/register.php" },
+    { "src": "/logout", "dest": "/api/logout.php" },
+    { "src": "/logout.php", "dest": "/api/logout.php" }
   ]
 }
