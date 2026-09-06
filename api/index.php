@@ -153,7 +153,7 @@ require_once __DIR__ . '/../includes/header.php';
                     <div class="active-member-item">
                         <img src="../assets/images/user-logo.png" alt="User" class="member-thumb">
                         <div class="member-details">
-                            <strong>Mas Riy</strong>
+                            <strong>RIYAN SETIAWAN</strong>
                             <small class="text-success">● Aktif / Pengelola E-Perpus</small>
                         </div>
                     </div>
@@ -211,4 +211,4 @@ require_once __DIR__ . '/../includes/header.php';
 </section>
 <!-- /.content -->
 
-<?php require_once __DIR__ . '/../includes/footer.php'; ?>
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>
